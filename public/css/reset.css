@@ -1,0 +1,68 @@
+/*
+ * 基础设置
+ */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+p,
+form,
+input,
+button{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #616161;
+}
+
+ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    /* 当前父元素的百分比 */
+    font-size: 100%;
+    font-weight: 400;
+}
+b,strong{
+    font-weight: 400;
+}
+i,em{
+    font-style: normal;
+}
+u,ins,s,del{
+    text-decoration: none;
+}
+table{
+    /* 单元格与单元格之间的距离 */
+    border-spacing: 0;
+    /* 一像素边框 */
+    border-collapse: collapse;
+}
+
+/*
+ * 图片默认有一个四像素的留白
+ * 解决方案：给img加上display:block;
+ */
+img{
+    display: block;
+}
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
